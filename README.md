@@ -7,8 +7,7 @@ This React application generates random user information using the Random User A
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 1. **Clone the repository:**
