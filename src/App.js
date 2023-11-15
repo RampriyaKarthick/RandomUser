@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import './App.css';
+import IconList from './components/IconList';
 
 function App() {
 
@@ -29,6 +30,17 @@ function App() {
     }
   };
 
+  const sortUsersByName = () => {
+    const sortedUsers = [...users].sort((a, b) => {
+      const nameA = a.name.toLowerCase();
+      const nameB = b.name.toLowerCase();
+      if (nameA < nameB) return -1;
+      if (nameA > nameB) return 1;
+      return 0;
+    });
+    setUsers(sortedUsers);
+  };
+
   const handleGetUsers = () => {
     for (let i = 0; i < 10; i++) {
       getRandomUser();
@@ -40,17 +52,44 @@ function App() {
     setUsers(updatedUsers);
   };
 
+  const handleGenderChange = (gender) => {
+    setSelectedGender(gender);
+    setUsers([]); 
+  };
+
+
+  
   return (
     <div >
       <h1 className="title">Random User Generator</h1>
       <div>
+      <label>
+            Choose Gender:
+            <select value={selectedGender} onChange={(e) => handleGenderChange(e.target.value)}>
+              <option value="">All</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
       <button className="get-user-button" onClick={getRandomUser}>
           Get Random User
         </button>
         <button className="get-users-button" onClick={handleGetUsers}>Get 10 Random Users</button>
-      </div>
-      {users
-          .filter(user => selectedGender ? user.gender === selectedGender : true) // Apply gender filter
+        <button className="sort-button" onClick={sortUsersByName}>
+          Sort by Name
+        </button>
+        <label>
+            Choose Gender:
+            <select value={selectedGender} onChange={(e) => handleGenderChange(e.target.value)}>
+              <option value="">All</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
+        </div>
+      <div className="card-container">
+        {users
+          .filter(user => selectedGender ? user.gender === selectedGender : true) 
           .map((user, index) => (
             <div className="card" key={user.id}>
               <div className="banner"></div>
@@ -58,13 +97,16 @@ function App() {
                 <div className='image-container'>
                   <img src={user.image} alt={`${user.name}`} className="rounded-image" />
                 </div>
-                
+                <div className="bottom-icons">
+                  <IconList userData={user} />
+                </div>
                 <button className="delete-button" onClick={() => deleteUser(user.id)}>
-                  Remove User
+                  Delete
                 </button>
               </div>
             </div>
           ))}
+      </div>
     </div>
   );
 }

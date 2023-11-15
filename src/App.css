@@ -8,3 +8,60 @@ body{
   justify-content: center;
   color: #B68F40;
 }
+
+.get-user-button:hover {
+  background-color: #2980b9;
+  color:whitesmoke
+}
+
+.get-users-button:hover {
+  background-color: #2980b9;
+  color:whitesmoke
+}
+
+.sort-button:hover{
+  background-color: #2980b9;
+  color:whitesmoke
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  padding: 50px; 
+  border-radius: 10px
+}
+
+.card {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 400px;
+  height: 300px; 
+  margin: 10px; 
+  position: relative; 
+}
+
+.banner {
+  background-color: #cbc0c0;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0; 
+}
+.image-container {
+  position: relative;
+  z-index: 1;
+}
+
+.rounded-image {
+  padding-top: 10px;
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+}
