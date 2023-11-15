@@ -1,13 +1,39 @@
 
 body{
-  background-color:#D7FCD4;
+  background-color:#AE445A;
 }
+
 .title{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #B68F40;
+  color: #F39F5A;
 }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#451952;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; 
+}
+
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 10vh;
+  padding: 5px; 
+}
+
+
 
 .get-user-button:hover {
   background-color: #2980b9;
@@ -21,7 +47,8 @@ body{
 
 .sort-button:hover{
   background-color: #2980b9;
-  color:whitesmoke
+  color:whitesmoke;
+  margin-right:2px;
 }
 
 .card-container {
@@ -29,9 +56,10 @@ body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 75%;
-  padding: 50px; 
-  border-radius: 10px
+  width: 100%;
+  padding: 1px; 
+  border-radius: 10px;
+  margin-top:200px;
 }
 
 .card {
@@ -46,7 +74,7 @@ body{
 }
 
 .banner {
-  background-color: #cbc0c0;
+  background-color:#662549;
   height: 70px;
   width: 100%;
   position: absolute;

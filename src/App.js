@@ -61,8 +61,9 @@ function App() {
   
   return (
     <div >
-      <h1 className="title">Random User Generator</h1>
-      <div>
+    <div className="nav-bar">
+    <h1 className="title">Random User Generator</h1>
+      <div className="top">
       <label>
             Choose Gender:
             <select value={selectedGender} onChange={(e) => handleGenderChange(e.target.value)}>
@@ -78,15 +79,10 @@ function App() {
         <button className="sort-button" onClick={sortUsersByName}>
           Sort by Name
         </button>
-        <label>
-            Choose Gender:
-            <select value={selectedGender} onChange={(e) => handleGenderChange(e.target.value)}>
-              <option value="">All</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          </label>
+      
         </div>
+    </div>
+     
       <div className="card-container">
         {users
           .filter(user => selectedGender ? user.gender === selectedGender : true) 
@@ -101,7 +97,7 @@ function App() {
                   <IconList userData={user} />
                 </div>
                 <button className="delete-button" onClick={() => deleteUser(user.id)}>
-                  Delete
+                  Remove user
                 </button>
               </div>
             </div>
