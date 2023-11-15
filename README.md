@@ -68,7 +68,7 @@ The navigation bar has a purple top border for a visually appealing design.
 
 
 ****Have Fun Exploring!**
-Feel free to contribute, provide feedback, or customize the app according to your needs. Let the journey begin, and may you discover fascinating profiles along the way!
+Feel free to contribute, provide feedback, or customize the app according to your needs. Let the journey begin, and may you discover fascinating profiles along the way
 
 
 
