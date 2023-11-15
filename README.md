@@ -46,11 +46,13 @@ or
   ``` 
     ```bash
    yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-```
+      ```
+
 ## Usage
 1.**Run the application**
-
+ ```bash
 npm start
+ ```
 
 2.Open your browser and visit http://localhost:3000 to view the Random User Generator.
 
