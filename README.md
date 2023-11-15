@@ -13,11 +13,13 @@ This React application generates random user information using the Random User A
 1. **Clone the repository:**
  ```bash
    git clone https://github.com/RampriyaKarthick/RandomUser.git
+   ```
 
 2.**Navigate to the project directory**
 
  ```bash
    cd random-user-generator
+   ```
 
 3.**Install Dependencies**
 
@@ -25,22 +27,26 @@ Required dependencies for this project are axios, react-icons and fontawesome
 
  ```bash
    npm install axios
+   ```
 or
  ```bash
    yarn add axios
+   ```
 
  ```bash
    npm install react-icons 
+   ```
 or
  ```bash
    yarn add react-icons
+   ```
 
  ```bash
    npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-   
+  ``` 
     ```bash
    yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-
+```
 ## Usage
 1.**Run the application**
 
