@@ -12,33 +12,37 @@ This React application generates random user information using the Random User A
 
 ## Installation
 1. **Clone the repository:**
-   ```bash
    git clone https://github.com/RampriyaKarthick/RandomUser.git
 
-   2.**Navigate to the project directory**
+2.**Navigate to the project directory**
    cd random-user-generator
 
-3.Install Dependencies
+3.**Install Dependencies**
 
 Required dependencies for this project are axios, react-icons and fontawesome
 
-npm install axios   
-yarn add axios
+   npm install axios 
+or
+   yarn add axios
 
-npm install react-icons 
-yarn add react-icons
 
-npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+   npm install react-icons 
+or
+   yarn add react-icons
+
+
+   npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+or
+   yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 
 ## Usage
-1.Run the application:
+1.**Run the application**
 
 npm start
 
 2.Open your browser and visit http://localhost:3000 to view the Random User Generator.
 
-Functions
+3.**Functions**
 Get One Random User:
 
 Click the "Get Random User" button to fetch and display information about a single random user.
@@ -64,7 +68,7 @@ The navigation bar has a purple top border for a visually appealing design.
 3. Font Awesome: Icon set and toolkit for web development.
 
 
-Have Fun Exploring!
+****Have Fun Exploring!**
 Feel free to contribute, provide feedback, or customize the app according to your needs. Let the journey begin, and may you discover fascinating profiles along the way!
 
 
